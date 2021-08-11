@@ -17,7 +17,7 @@
 
 <html>
 <head>
-  <script src="https://auth.labs.ai/auth/js/keycloak.js"></script>
+  <script src="https://sso.labs.ai/auth/js/keycloak.js"></script>
 </head>
 <body>
 
@@ -131,11 +131,11 @@
 
     var keycloak = Keycloak(
             {
-              "realm": "EDDI",
-              "auth-server-url": "https://auth.labs.ai/auth",
+              "realm": "newbly",
+              "auth-server-url": "https://sso.labs.ai/auth",
               "ssl-required": "external",
-              "resource": "eddi-config-ui",
-              "clientId": "eddi-config-ui",
+              "resource": "newbly-ui",
+              "clientId": "newbly-ui",
               "public-client": true,
               "confidential-port": 0
             });
